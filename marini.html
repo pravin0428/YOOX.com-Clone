@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="othershop.css">
+    
+</head>
+<body>
+<div>
+<div class="cl1">
+    <select name="" id="">
+        <option value="">united satet</option>
+        <option value="">armenia</option>
+        <option value="">georgia</option>
+    </select>
+    <a href="">CUSTOMER CARE</a>
+    <p>FREE STANDARD SHIPPING ON ORDERS OVER $200</p>
+    <div><ion-icon name="pencil-outline"></ion-icon> <a href="">REGISTER</a></div>
+    <div><ion-icon name="lock-open"></ion-icon><a href="login.html">LOGIN</a></div>
+</div>
+<div class="cl2">
+    <div>
+    <a href="index.html">WOMAN</a>
+    <a href="man.html">MAN</a>
+    <a href="kid.html">KIDS</a>
+    <P>/</P>
+    <a href="">DISINE+ART</a>
+</div>
+<h1>
+    <font color="red">Y</font>
+    <font color="yellow">O</font>
+    <font color="green">O</font>
+    <font color="aqua">X</font>
+</h1>
+    <ion-icon name="search-outline"></ion-icon>
+    <ion-icon name="heart-outline"></ion-icon>
+    <ion-icon name="bag-handle-outline"></ion-icon>
+</div>
+<div class="cl3">
+    <div>
+        <p> <a href="gucci.html"> New arrivals</a> </p>
+        <p><a href="chole.html">Designers</a></p>
+        <p><a href="ROBERTO.html">Clothing</a></p>
+        <p><a href="marini.html">YooxGen</a></p>
+        
+        
+        <p>COLLABORATIONS</p>
+        
+    </div>
+ </div>
+<div class="container">
+    <div class="main">
+        <div>
+            <p>CATEGORIES</p><p>+</p>
+        </div>
+        <div>
+            <p>COLLECTIONS</p><p>+</p>
+        </div>
+        <div>
+            <p>PRICE RANGE</p><p>+</p>
+        </div>
+        <div>
+            <p>COLORS</p><p>+</p>
+        </div>
+        <div>
+            <p>MATERIALS</p><p>+</p>
+        </div>
+    </div>
+    <div class="grid">
+
+        <select id="Sort_by_price" class="sort" onchange="SearchByPrice() ">
+            <option value="">Sort By Price</option>
+            <option value="low">Sort by Low to High Price</option>
+            <option value="high">Sort by High to Low Price</option>
+        </select>
+      <div id="container"></div>
+    </div>
+</div>
+    <div class="last1">
+        <div>
+            <h3>NEW TO YOOX</h3>
+            <hr>
+            <a >Shopping guide</a><br><br>
+            <a>iPhone/iPad/Android</a><br><br>
+            <a>Browse all Designers</a><br><br>
+            <a>Browse all Categories</a><br><br>
+        </div>
+        <div>
+            <h3>HELP</h3>
+            <hr>
+             <a href="">Shipping times & costs</a><br><br>
+             <a href=""> Payments and web security</a><br><br>
+             <a href="">Product quality</a><br><br>
+             <a href="">Track your order</a><br><br>
+             <a href="">Returns & refunds</a><br><br>
+             <a href="">FAQs</a><br><br>
+             <a href="">Size Guide</a><br><br>
+        </div>
+        <div class="signup">
+            <ion-icon name="mail-outline"></ion-icon>
+            <h3>YOOX NEWS</h3>
+            <p>Sign up for the newsletterand discover the latest arrivals and promotions</p>
+            <input class="submit" type="email" placeholder="INSERT YOUR E-MAIL ADDRESS">
+            <div>
+               <div>
+                   <input id="roundcheck" type="checkbox">
+                   <p>Woman</p>
+               </div>
+               <div>
+                <input id="roundcheck" type="checkbox">
+                <p>Man</p>
+               </div>
+            </div>
+            <div class="check">
+                <input type="checkbox">
+                <p>I consent to receive YOOX newsletters via email. For further information, please consult the <a href="">Privacy Policy</a>.</p>
+
+            </div>
+            <input class="btn" type="submit" placeholder="SIGN UP">
+        </div>
+
+        <div>
+            <h3>MYOOX</h3>
+            <hr>
+            <a href="login.html">Login</a><br><br>
+            <a href="">My Orders</a><br><br>
+            <a href="">My Details</a><br><br>
+            <a href="">Dream Box</a><br><br>
+            <a href="">Première</a><br><br>
+        </div>
+        <div>
+            <h3>ABOUT US</h3>
+            <hr>
+            <a href="">Company Info</a><br><br>
+            <a href="">Press</a><br><br>
+            <a href="">Affiliation</a><br><br>
+            <a href="">Careers</a><br><br>
+        </div>
+    </div>
+    <div class="last2">
+       <div>
+           <p>CONNECT WITH US</p>
+           <i class="fab fa-facebook-f"></i>
+           <i class="fab fa-twitter"></i>
+           <i class="fab fa-instagram"></i>
+           <i class="fab fa-youtube"></i>
+           <i class="fab fa-pinterest-p"></i>
+           <i class="fab fa-tiktok"></i>
+
+       </div>
+       <div>
+        <i class="fas fa-tablet-alt"></i>
+           <p>DOWNLOAD THE APP FOR iOS / ANDROID</p>
+       </div>
+    </div>
+    <div class="last3">
+        <p>POWERED BY YOOX NET-A-PORTER GROUP - COPYRIGHT © 2000-2022 YOOX NET-A-PORTER GROUP S.P.A. - ALL RIGHTS RESERVED - SIAE LICENCE # 401/I/526</p>
+        <p></p><a href="">LEGAL AREA </a> / <a href="">PRIVACY POLICY</a></p>  
+     </div>
+</body>
+</html>
+
+
+
+<script>
+
+    var data = [
+        {
+            image_url :   "https://www.yoox.com/images/items/17/17042205ud_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:  "SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$456.00",
+            price : "$103.00" ,
+        },
+
+        {
+            image_url: "https://www.yoox.com/images/items/11/11672830hw_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$732.00",
+            price : "$121.00",
+
+        },
+
+        {
+            image_url: "https://www.yoox.com/images/items/17/17088984ik_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$702.00",
+            price : "$12.00",
+
+        },
+
+
+
+
+
+
+        {
+            image_url: "https://www.yoox.com/images/items/34/34904017xr_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$392.00",
+            price : "$150.00",
+
+        },
+
+
+        {
+            image_url:"https://www.yoox.com/images/items/13/13359373sl_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$7492.00",
+            price : "$100.00",
+
+        },
+        {
+            image_url:"https://www.yoox.com/images/items/17/17032182ub_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$7952.00",
+            price : "$220.00",
+
+        },
+        {
+            image_url:"https://www.yoox.com/images/items/11/11650123qx_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$892.00",
+            price : "$620.00",
+
+        },
+        {
+            image_url:"https://www.yoox.com/images/items/11/11576200ia_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$522.00",
+            price : "$520.00",
+
+        },
+        {
+            image_url:  "https://www.yoox.com/images/items/11/11912947ms_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$702.00",
+            price : "$320.00",
+
+        },
+        {
+            image_url:"https://www.yoox.com/images/items/11/11986639ev_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center" ,
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$791.00",
+            price : "$220.00",
+
+        },
+        {
+            image_url: "https://www.yoox.com/images/items/12/12282049pf_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$795.00",
+            price : "$150.00",
+
+        },
+        {
+            image_url: "https://www.yoox.com/images/items/13/13571243ig_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$798.00",
+            price : "$128.00",
+
+        },
+        {
+            image_url:"https://www.yoox.com/images/items/12/12227560mf_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$798.00",
+            price : "$125.00",
+
+        },
+
+
+        {
+            image_url:         "https://www.yoox.com/images/items/39/39972368jx_14_r.jpg?width=210&height=272&impolicy=crop&gravity=Center"
+    ,
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$782.00",
+            price : "$110.00",
+
+        },
+        {
+            image_url:"https://www.yoox.com/images/items/45/45560290oq_14_e.jpg?width=210&height=272&impolicy=crop&gravity=Center",
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$752.00",
+            price : "$123.00",
+
+        },
+        {
+            image_url:"https://www.yoox.com/images/items/15/15037306rv_14_f.jpg?width=210&height=272&impolicy=crop&gravity=Center" ,
+            product_n:"SEE BY CLOE" ,
+            p : "MARINI ITEM",
+            oldprice : "$722.00",
+            price : "$123.00",
+
+        },
+    ]
+
+
+
+    function SearchByPrice() {
+    var selected = document.getElementById("Sort_by_price").value;
+    console.log("selected: ", selected);
+    if (selected == "high") {
+        data = data.sort(function (a, b) {
+
+            return b.price - a.price;
+        });
+    }
+    else if (selected == "low") {
+        data = data.sort(function (a, b) {
+            return a.price - b.price;
+        });
+    }
+
+    console.log(data);
+    displayItem(data);
+}
+
+
+
+displayItem(data);
+function displayItem(data) {
+    //let grid = document.getElementsByClassName("grid")
+    document.querySelector("#container").innerHTML = "";
+    data.map(function (item) {
+        var box = document.createElement("div");
+        box.setAttribute("class", "box");
+
+        box.addEventListener("click", function () {
+            // addToCart1(item)
+            localStorage.setItem("cart", JSON.stringify(item))
+            window.location.href = "cart.html"
+            // console.log(item)
+        })
+
+        container.append(box);
+        var image = document.createElement("img");
+        image.setAttribute("src", item.image_url);
+        box.append(image);
+        var innerbox = document.createElement("div");
+        innerbox.setAttribute("class", "innerbox");
+        box.append(innerbox);
+
+
+        var product_name = document.createElement("p");
+        product_name.setAttribute("id", "product_name");
+        product_name.textContent = item.product_n;
+        innerbox.append(product_name);
+
+
+        var p1= document.createElement("p");
+        p1.setAttribute("id", "product_p");
+        p1.textContent = item.p;
+        innerbox.append(p1);
+
+
+
+
+
+        var product_price = document.createElement("p");
+        product_price.setAttribute("id", "product_price");
+       // var Discount = Math.floor((item.price * 20) / (100));
+      //  product_price.textContent = (item.discount);
+
+        var span = document.createElement("span");
+        span.setAttribute("class", "orignal_price");
+        // var s =item.price-100;
+        // var afterdis = +(item.price) + 100;
+         span.textContent = item.oldprice;
+        product_price.append(span)
+
+        // var span2 = document.createElement("span");
+        // span2.setAttribute("id", "percentage_off");
+        // span2.textContent = "20% off";
+        // product_price.append(span2)
+
+
+
+        innerbox.append(product_price);
+        // var discount = document.createElement("p");
+      
+
+
+        var delivery = document.createElement("p");
+        delivery.setAttribute("id", "delivery");
+        delivery.textContent = item.price;
+        innerbox.append(delivery);
+
+    })
+}
+
+</script>
