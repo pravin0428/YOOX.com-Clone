@@ -1,0 +1,140 @@
+.bg-model{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.model-content{
+    width: 500px;
+    height: auto;
+    background-color: aliceblue;
+    border-radius: 4px;
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    position: relative;
+}
+span{
+    display: block;
+}
+#facebook-button{
+    background-color: #3c55a2;
+    background-image: url(https://www.yoox.com/media/yoox16/icons/facebook_24.png);
+    border: 2px solid #3c55a2;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    width: 30%;
+    margin: auto;
+}
+#google-button{
+    background-color: #fff;
+    background-image: url(https://www.yoox.com/media/yoox16/icons/google_24.png);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 2px solid #f2f2f2;
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    line-height: 50px;
+    width: 30%;
+    margin: auto;
+}
+input{
+    height: 40px;
+}
+form{
+    width: 60%;
+    margin: auto;
+    display: grid;
+    gap: 10px;
+}
+.model-content>div:nth-child(3)>span{
+    margin-bottom: 10px;
+}
+#checkbox{
+    display: flex;
+    align-items: center;
+}
+#checkbox+a{
+    display: flex;
+    justify-content: end;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: .6875rem;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+}
+#submit-button{
+    font-family: Montserrat,Sans-serif;
+    font-weight: 700;
+    background-color: #333;
+    border-color: #333;
+    color: #fff;
+    display: block;
+    line-height: normal;
+    width: 100%;
+    cursor: pointer;
+    font-size: .75rem;
+}
+#submit-button+div{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    color: #999;
+    font-size: .5625rem;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+}
+#submit-button+div>a{
+    color: #999;
+    font-weight: bold;
+    margin-left: 2px;
+}
+.model-content>div:last-child{
+    display: flex;
+    margin: auto;
+    font-size: 0.9em;
+    color: #333;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.model-content>div:last-child>a{
+    color: #333333;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+.close{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    font-size: 46px;
+    transform: rotate(45deg);
+    font-weight: bold;
+    cursor: pointer;
+}
+.model-content>div:nth-child(2){
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    color: #333;
+    font-size: 1.125rem;
+    background-color: #fffe94;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#checkbox>span{
+    margin-bottom: 0px;
+}

@@ -9,10 +9,10 @@ function navbar() {
             <a href="">CUSTOMER CARE</a>
             <p>FREE STANDARD SHIPPING ON ORDERS OVER $200</p>
             <div>
-                <ion-icon name="pencil-outline"></ion-icon> <a href="">REGISTER</a>
+                <ion-icon name="pencil-outline"></ion-icon> <a href="./register.html">REGISTER</a>
             </div>
             <div>
-                <ion-icon name="lock-open"></ion-icon><a href="login.html">LOGIN</a>
+                <button id="button">LOGIN</button>
             </div>
     </div>
         <div class="cl2">
