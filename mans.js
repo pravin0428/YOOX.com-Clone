@@ -1,8 +1,8 @@
-import {navbar,footer} from "../components/navbar.js";
+ import { navbar, footer } from "./navbar.js";  
 
-document.getElementById("nav").innerHTML = navbar()
+  document.getElementById("nav").innerHTML = navbar()
 
-document.querySelector(".last1").innerHTML = footer()
+  document.querySelector(".lastSection").innerHTML = footer()
 
 //   document.querySelector(".shirtsIn3").addEventListnerAll("click" , cartSection)
 // let s = document.querySelectorAll(".shirtsIn3")
@@ -74,7 +74,7 @@ function cartSection(elem){
         count++
         localStorage.setItem("count" , JSON.stringify(count))
         localStorage.setItem("Cart",JSON.stringify(cart))
-        window.location.href = "../allhtmlpage/cartmen.html"
+        window.location.href = "cartmen.html"
      }
  
  
@@ -93,6 +93,15 @@ let variable = document.querySelector(".fifthDiv")
     div.append(bt)
     variable.append(div)
  }
+
+ //first section
+
+ document.getElementById("backGroundPoster").addEventListener("click" , posterImg)
+
+function posterImg(){
+    window.location.href = "index.html"
+}
+
 // section4 js
 
 document.getElementById("img1").addEventListener("click" , storyOne)
@@ -104,7 +113,7 @@ function storyOne(){
 document.getElementById("img2").addEventListener("click" , storyTwo)
 
 function storyTwo(){
-    window.location.href = "../allhtmlpage/shoping.html"
+    window.location.href = "shoping.html"
 }
 
 document.getElementById("img3").addEventListener("click" , storyThree)
@@ -118,7 +127,7 @@ function storyThree(){
 document.getElementById("c1").addEventListener("click" ,shopNow)
 
 function shopNow(){
-    window.location.href = "../allhtmlpage/shoping.html"
+    window.location.href = "shoping.html"
 }
 
 

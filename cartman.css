@@ -53,12 +53,12 @@
     padding: 10px;
     width: 150px;
     border-radius: 10px;
-    background-color: greenyellow;
+    background-color: rgb(237, 58, 30);
     color: black;
 }
 
 #de:hover{
-    background-color: rgb(235, 24, 9);
+    background-color: rgb(16, 222, 184);
     color: black; 
 }
 
@@ -66,4 +66,21 @@
   width: 300px;
 }
 
- 
+#shop{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+   padding: 20px;
+   width: 250px;
+   border-radius: 15px;
+   text-align: center;
+   /* border: none; */
+   font-size: 25px;
+   border-color: yellow;
+   background-color: rgb(223, 238, 9);
+}
+
+#shop:hover{
+    background-color: green;
+    color: yellow;
+}

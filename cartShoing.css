@@ -51,12 +51,12 @@
     padding: 10px;
     width: 150px;
     border-radius: 10px;
-    background-color: rgb(13, 226, 245);
+    background-color: rgb(249, 50, 5);
     color: black;
 }
 
 #delete_btn:hover{
-    background-color: rgb(237, 40, 5);
+    background-color: rgb(15, 214, 161);
     color: black; 
 }
 #card_imgx{
@@ -80,3 +80,23 @@
  #return_shop:hover{
     resize: both;
  }
+
+ 
+#shop{
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+   padding: 20px;
+   width: 250px;
+   border-radius: 15px;
+   text-align: center;
+   /* border: none; */
+   font-size: 25px;
+   border-color: yellow;
+   background-color: rgb(223, 238, 9);
+}
+
+#shop:hover{
+    background-color: green;
+    color: yellow;
+}
