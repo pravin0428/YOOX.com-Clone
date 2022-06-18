@@ -1,0 +1,80 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../all_css/cartShoing.css">
+ 
+    <title>Document</title>
+    
+    
+</head>
+<body>
+
+    <div id="nav" ></div>
+
+    <div id="shoping_cartx">
+        <p id="hd" >Here are Your Favorite Cart item, lets buy them</p>
+        <h1 id="count" >0</h1>
+        <a id="return_shop" href="shoping.html">Return To Shop</a>
+    </div>
+   <div id="ctnr"></div>
+</body>
+</html>
+
+ <script>
+    
+let cart = JSON.parse(localStorage.getItem("CartShop")) || [] ;
+var count = cart.length
+let ct = document.getElementById("count") 
+ct.innerText = `Total Item In Cart : ${count}`
+
+    cartShow(cart)
+      
+    function cartShow(data){
+          document.querySelector("#ctnr").innerHTML = null;
+          data.forEach(function(elem , index){
+    let ctnr = document.getElementById("ctnr")
+    let div = document.createElement("div")  
+    div.id = "manageDivx"
+    let div1 = document.createElement("div")
+    div1.id = "img_divx"
+    let div2 = document.createElement("div")
+    div2.id = "des_divx"
+    let image = document.createElement("img") 
+    image.id = "card_imgx" 
+    image.src = elem.image_url
+    let head = document.createElement("h4") 
+    head.innerText = elem.product_n 
+    let para1 = document.createElement("p") 
+    para1.innerText = elem.p
+    let para2 = document.createElement("p")
+    para2.innerText = elem.price
+    let btn = document.createElement("button") 
+    btn.id="delete_btn"
+    btn.innerText = "DELETE"
+    btn.addEventListener("click" , function(){
+    deleteCart(index)
+    })
+
+    div1.append(image)
+    div2.append(head,para1,para2 , btn)
+    div.append(div1,div2)
+    ctnr.append(div)
+    })  
+}
+ 
+    var reduced = count
+    console.log(reduced)
+    function deleteCart(index){
+    reduced--
+    let re_count = document.getElementById("count")  
+    re_count.innerText = `Total Item In Cart : ${reduced}` 
+    cart.splice(index , 1) 
+    localStorage.setItem("CartShop" , JSON.stringify(cart))
+    cartShow(cart)
+
+}
+ </script>
+

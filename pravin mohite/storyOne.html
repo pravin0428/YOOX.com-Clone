@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+        #backGroundPoster {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 900px;
+  margin-top: 40px;
+  /* background-color: yellow; */
+}
+ #logo{
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+ }
+
+ #storyDiv{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 900px;
+  margin-top: 40px;
+  /* border: 1px solid red; */
+  /* background-color: rgb(103, 190, 219); */
+ }
+
+ #story{
+    width: 50%;
+    height: 93%;
+    text-align: center;
+    /* margin-top: 200px; */
+    padding-top: 60px;
+    /* color: white; */
+    /* border: 1px solid rgb(82, 12, 202); */
+   
+ }
+
+ #pic{
+    
+    /* border: 1px solid yellow; */
+    width: 50%;
+    height: 100%;
+ }
+ #pic>img{
+    margin-left: 10%;
+    width: 800px;
+    height: 100%;
+ }
+
+ h1{
+    font-size: 100px;
+ }
+
+ #polo{
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  height: 500px;
+/* border: 5px solid violet; */
+margin-top: -130px;
+text-align: center;
+font-size: 25px;
+/* background-color: pink; */
+
+ }
+
+ #tPolo{
+    height: 300px;
+    width: 300px;
+ }
+  #st_cart{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+  }
+
+  #st_cart:hover{
+    background-color: greenyellow;
+    color: black
+  }
+    </style>
+</head>
+<body>
+    <!-- controls autoplay -->
+    <div id="backGroundPoster">
+      <video width="100%" height="100%" controls autoplay>  
+      
+        <source src="https://secure.social.yoox.it/yspecial/Adv/ralphlauren/mar2022/video_men.mp4" type="video/mp4">   
+      </video>
+</div>
+<div id="logo" >
+    <img src="https://secure.social.yoox.it/yspecial/Adv/ralphlauren/may2021/Logo.png" alt="sorry">
+  </div>
+
+  <div id = "storyDiv" >
+    <div id="story" > 
+        <h1>The Story
+            of an Icon</h1>
+       
+        <h2>Every polo has a story to tell! We’re</h2>
+        <h2>celebrating this iconic piece: a symbol</h2>
+        <h2>of the optimism and confidence that</h2>
+        <h2>American style has inspired for more</h2>
+        <h2>than half a century.</h2>
+     </div>
+    <div id="pic" >
+        <img src="https://secure.social.yoox.it/yspecial/Adv/ralphlauren/may2022/M/1.jpg?v=01" alt="">
+    </div>
+  </div>
+
+  <div id="polo"></div>
+</body>
+</html>
+
+<script>
+
+let poloShirt = [
+    {
+        img:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/521384_bb1aadee-8b99-4251-ac15-975de71ffee3_1800x1800.jpg?v=1649667347",
+        h4:"Pale Grey Melange Polos & T-Shirt",
+        p1:"t-shirt",
+        p2:"454.44",
+         
+        
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2114440_1800x1800.jpg?v=1643912889",
+        h4:"White Polos & T-Shirt",
+        p1:"t-shirt",
+        p2:"279.05",
+      
+        
+    },
+    {
+        img:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/2193869_1800x1800.jpg?v=1647045855",
+        h4:"White Polos & T-Shirt",
+        p1:"t-shirt",
+        p2:"279.05",
+        
+               
+    },
+]
+mendata(poloShirt)
+function mendata(data){
+    data.forEach(function(elem){
+    // console.log(elem)
+    let polo = document.getElementById("polo")
+   let div=document.createElement("div");
+ 
+  let image=document.createElement("img");
+  image.id = "tPolo"
+   image.src = elem.img
+ 
+  let p1=document.createElement("p")
+  p1.innerText=elem.h4;
+
+//   let price =document.createElement("h5")
+//   price.innerText=elem.original_price
+
+  let o_price =document.createElement("h5")
+  o_price.innerText = `offer_Prise : ${elem.p2}` 
+
+  let cat =document.createElement("h5")
+  cat.innerText = `Type : ${elem.p1}` 
+
+  // let clr =document.createElement("h5")
+  // clr.innerText =  `color : ${elem.color}` 
+  
+  let btn = document.createElement("button")
+  btn.id = "st_cart" 
+     btn.innerText = "ADD CART"
+     btn.addEventListener("click" , function(){
+        cartSection(elem)
+     })
+
+ div.append(image,p1,o_price,cat,btn)
+ polo.append(div)
+ 
+})
+}
+
+let cart = JSON.parse(localStorage.getItem("Cart")) || [] ;
+  var  count = 0
+function cartSection(elem){
+       
+        cart.push(elem)
+        count++
+        localStorage.setItem("count" , JSON.stringify(count))
+        localStorage.setItem("Cart",JSON.stringify(cart))
+        window.location.href = "../allhtmlpage/cartmen.html"
+     }
+ 
+</script>

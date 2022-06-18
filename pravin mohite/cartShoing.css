@@ -1,0 +1,82 @@
+#ctnr{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid teal;
+    gap: 20px 20px;
+}
+
+#img_divx{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    border: 1px solid red;
+}
+#des_divx{
+    border: 1px solid black;
+    text-align: center;
+    width: 80%;
+    font-size: 25px;
+    line-height: 12px;
+    height: 100%;
+    
+}
+
+#manageDivx{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 300px;
+}
+
+#hd{
+     /* text-align: center; */
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 30px;
+     font-stretch: condensed;
+}
+
+#hd:hover{
+    color: rgb(97, 220, 26);
+    text-transform: capitalize;
+     
+}
+
+#shoping_cartx{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#delete_btn{
+    padding: 10px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(13, 226, 245);
+    color: black;
+}
+
+#delete_btn:hover{
+    background-color: rgb(237, 40, 5);
+    color: black; 
+}
+#card_imgx{
+  width: 300px;
+}
+
+ #return_shop{
+    text-decoration: none;
+    margin-top: 15px; 
+    height: 40px;
+    width: 150px;
+    font-size: large;
+    text-align: center;
+    border-radius: 10px;
+    padding-top: 10px;
+    color: rgb(11, 11, 12);
+    background-color: yellow;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ }
+
+ #return_shop:hover{
+    resize: both;
+ }

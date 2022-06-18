@@ -1,0 +1,473 @@
+/* body>div {
+  width: 100%;
+    border: 10px solid red;  
+} */
+
+/* #nav {
+  z-index: 1;
+  position: fixed;
+} */
+
+.head {
+  font-size: 24px;
+  letter-spacing: 2px;
+  /* border: 1px solid rgb(14, 234, 51); */
+}
+#line1 {
+  display: flex;
+  height: 20px;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  align-items: center;
+  border-bottom: 1px solid whitesmoke;
+  /* border: 1px solid rgb(238, 215, 7); */
+  background-color: white;
+  /* border: 10px solid rgb(61, 8, 221); */
+}
+#line1 a {
+  color: black;
+}
+#line2 {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 5px;
+  align-items: center;
+  /* border: 1px solid rgb(12, 12, 225); */
+  background-color: white;
+}
+#line2 > div {
+  display: flex;
+  height: 20px;
+  width: 30%;
+  justify-content: space-around;
+  padding-top: 5px;
+  align-items: center;
+}
+#line2 a {
+  color: #000;
+}
+p:hover {
+  color: chartreuse;
+}
+#line3 {
+  display: flex;
+  height: 30px;
+  width: 100%;
+  justify-content: space-evenly;
+  padding-top: 7px;
+  align-items: center;
+  background-color: rgb(41, 40, 40);
+  color: white;
+  margin-top: 5px;
+}
+#line3 > div {
+  display: flex;
+  height: 30px;
+  width: 80%;
+  justify-content: space-around;
+  padding-top: 5px;
+  align-items: center;
+}
+#backGroundPoster {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 1000px;
+
+  background-image: url("https://www.yoox.com/images/yoox80/banners/6895_1_Pride_Main_WM.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#backGroundPoster > div {
+  width: 25%;
+  height: 15%;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  background-color: white;
+  margin-left: 20px;
+  margin-bottom: 40px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+#infoCard > div {
+  margin-top: 70px;
+  margin-top: 30px;
+  /* display: flex;
+   
+    justify-content: space-evenly;
+     */
+}
+
+#infoCard a {
+  color: darkslategray;
+}
+/* #infoCard>h2{
+    text-align: center;
+}
+#infoCard>p{
+    text-align: center;
+} */
+
+/* section2 */
+#section2 {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  
+  /* border: 2px solid blue; */
+}
+#section2 > div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 80px;
+  margin-right: 60px;
+}
+#section2 > div > a {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #090808;
+  font-weight: bold;
+  font-size: large;
+  line-height: 25px;
+  letter-spacing: 2px;
+  
+}
+#c1 {
+  width: 500px;
+  height: 600px;
+}
+img {
+  margin-top: 50px;
+}
+
+#nav2 {
+ height: 600px;
+ width: 500px;
+    /* border: 2px solid rgb(238, 215, 7); */
+}
+
+#c2{
+    width: 500px;
+    height: 600px;  
+}
+ #section3{
+    width: 100%;
+     text-align: center;
+  
+     /* border: 2px solid blue; */
+  }
+   #cardsIn3{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+}
+  #cardsIn3>div{
+    width: 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+#abc{
+  padding: 10px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #000;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#abc:hover{
+  background-color: rgb(14, 231, 11);
+  color: rgb(8, 7, 7);
+}
+
+#abd{
+  padding: 10px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #000;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#abd:hover{
+  background-color: rgb(14, 231, 11);
+  color: rgb(8, 7, 7);
+}
+#aba{
+  padding: 10px;
+  width: 100px;
+  border-radius: 15px;
+  background-color: #000;
+  color: white;
+  margin-bottom: 20px;
+}
+
+#aba:hover{
+  background-color: rgb(14, 231, 11);
+  color: rgb(8, 7, 7);
+}
+  #section4{
+    display: flex;
+    justify-content: space-around;
+
+}
+#section4>div{
+    text-align: center;
+    width: 30%;
+}
+#section4 img{
+    width: 100%;
+    
+}
+  .img1{
+    margin-top: 20px;
+    
+
+}
+#section5{
+    width: 100%;
+     /* text-align: center; */
+}
+  #cardsIn5{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+    
+}
+#cardsIn5>div{
+    width: 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.in-pic2type{
+    text-align: center;
+}
+  .price{
+   text-decoration: line-through;
+   color: gray;
+}
+  /* .pic5{
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    height: 600px;
+    margin: auto;
+    background-image: url('https://www.yoox.com/images/yoox80/banners/6833_5_8byoox_SS22_Special.jpg?634485886869569819#width=930&height=660');
+     background-repeat: no-repeat;
+     margin-top: 20px;
+     
+}
+.in-pic5f{
+    width: 30%;
+    height: 150px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    
+    margin-top: 35%;
+    text-align: center;
+    
+}
+.pic5 i{
+    margin-top: 400px;
+    
+}
+
+.in-pic5f>div{
+    display: flex;
+    justify-content: space-around;
+}
+.in-pic5d{
+    width: 20%;
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 30%;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    text-align: center;
+}
+.in-pic5d>img{
+    width: 100%;
+    height: 200px;
+    vertical-align: baseline;
+} */
+.pic6{
+    width: 100%;
+     text-align: center;
+}
+ .in-pic6{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.in-pic6>div{
+    width: 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+ 
+  .pic7{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    margin-top: 20px;
+    
+}
+.pic7>div{
+  width: 50%;
+  height: 100%;
+  
+    
+}
+.pic7>div>div{
+    width: 50%;
+    
+    margin-bottom: 10px;
+    background-color: white;
+
+}
+.inpic7-1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-image: url('https://www.yoox.com/images/yoox80/banners/5628_1_Multiform_Bottom.gif?634485886869569819#width=690&height=637');
+}
+.inpic7-1>div{
+    
+    margin-left: 10px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+.inpic7-1>div>div{
+    display: flex;
+    justify-content: space-between;
+}
+.pic7 a{
+    color: #333333;
+}
+.inpic7-2>div{
+    margin-right: 10px;
+    text-align: right;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.inpic7-2{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+    background-image: url('https://www.yoox.com/images/yoox80/banners/6824_1_Trendvacation_HalfBottom_M.jpg?634485886869569819#width=690&height=637');
+}
+
+/* footer */
+
+.last1{
+    display: flex;
+    width: 100%;
+    height: 600px;
+   justify-content: center;
+   background-color: #f3f3f3;
+   margin-top: 5px;
+
+}
+.last1 a{
+    color: black;
+    text-decoration: none;
+}
+.last1>div{
+    width: 20%;
+    text-align: center;
+    justify-content: center;
+}
+.last1>div>div{
+    display: flex;
+    justify-content: space-around;
+}
+hr{
+    width: 50px;
+    height: 2px;
+    color: black;
+    background-color: black;
+}
+.signup{
+    background-color: white;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.signup>div>div{
+    display: flex;
+    align-items: center;
+}
+.check{
+    display: flex;
+    align-items: center;
+}
+#roundcheck{
+    border-radius: 50%;
+}
+.submit{
+    background-color: #f3f3f3;
+    width: 80%;
+    height: 30px;
+    border: 0px;
+}
+.btn{
+    width: 80%;
+    height: 30px;
+    background-color: #333333;
+    color: white;
+    margin-bottom: 5px;
+}
+.btn:hover{
+    color: lightseagreen;
+    cursor: pointer;
+}
+input{
+    cursor: pointer;
+}
+a{
+    cursor: pointer;
+}
+.last2{
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-around;
+    background-color: #f3f3f3;
+    border-top: 1px solid whitesmoke;
+    margin-top: 5px;
+}
+.last2>div{
+    display: flex;
+    height: 50px;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: #f3f3f3;
+}
+.last3{
+    padding-top: 2%;
+    width: 100%;
+    height: 150px;
+    color: whitesmoke;
+    background-color: #333333;
+    text-align: center;
+}
+.last3>a{
+    color: lightseagreen;
+}  
