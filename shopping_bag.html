@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping bag</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #navbar{
+            width: 60%;height: 50px;
+            margin: auto;margin-bottom:30px;
+            background-color: #333333;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+         
+        }
+        #navbar a{
+            font: 18px bold  ;
+            color: aliceblue;
+        }
+        #container_bag{
+            width:60%;height: auto;padding: 1%;
+            margin: auto;
+            border: 0px solid #333333;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+        #container_bag div{
+            display: flex;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        #container_bag img{
+            width: 150px;height: 140px;
+            margin-right: 5%;
+        }
+        #container_bag p{
+            margin-right: 20px;
+        }
+        button{
+            width:100px;height: 30px;
+            border: none;
+            background-color:cyan;
+            color: red;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-right: 10%;margin-left: 10%;
+        }
+        button:active{
+            color: rgb(107, 6, 6);
+        }
+        #total_price{
+            
+            display: flex;
+            width:60%;height: auto;padding: 1%;
+            margin: auto;
+           
+        }
+        #total_price div{
+            border: 1px solid;
+            width: 100%;
+            text-align: center;
+            
+        }
+        #price{
+            margin: auto;
+            margin-top: 60px;
+            width:60%;height:auto;padding: 1%;
+            /* margin: auto; */
+            border: 0px solid #333333;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Continue Shopping</a>
+    </div>
+    
+    <div id="container_bag">
+    </div>
+
+<div id="price">                    
+        <H3>TOTAL AMOUNT</H3>
+        <hr>        
+    <div id="total_price">      
+        
+        
+    </div>
+</div>
+</body>
+</html>
+<script>
+
+    let sum = 0;
+    var arr_bag_data = JSON.parse(localStorage.getItem("add_to_bag"))
+    console.log('arr_bag_data:', arr_bag_data)
+    let h3 = document.createElement("h3");
+        h3.innerHTML = `ITEMS ADDED TO YOUR SHOPPING BAG - ${arr_bag_data.length}`
+        let hr = document.createElement("hr");
+        document.getElementById("container_bag").append(h3,hr)
+        
+    
+    
+        arr_bag_data.forEach(function(ele,index){
+            console.log('arr_bag_data:', arr_bag_data)
+            
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            img.src = ele[0].image;
+
+            let div_title = document.createElement("div");
+            let title = document.createElement("p");
+            title.innerText = ele[1].title;
+            div_title.append(title)
+
+            let remove_btn = document.createElement("button");
+            remove_btn.innerText = "remove item"
+            remove_btn.addEventListener("click",remove_item)
+            // remove_item()
+
+            let price = document.createElement("p");
+            price.innerHTML = ele[2].price;
+
+            div.append(img,div_title,remove_btn,price);
+            document.getElementById("container_bag").append(div)
+
+            function remove_item(){
+                arr_bag_data.splice(index,1);
+                localStorage.setItem("add_to_bag",JSON.stringify(arr_bag_data))
+                window.location.reload()
+            }
+            sum += ele[3].mp;
+            
+    })
+    let tax = Math.floor(sum*18/100);
+    let ship = 9.9;
+    let total = Math.ceil(sum+tax+ship)
+    
+    
+        let left_div = document.createElement("div");
+        let right_div = document.createElement("div");
+        
+        let price = document.createElement("h4");
+        price.innerText = "TOTAL FOR ITEMS"
+        let taxes = document.createElement("h4");
+        taxes.innerText = "Local Taxes and Duties";
+        let shipping = document.createElement("h4");
+        shipping.innerText = "SHIPPING";
+        let final_amt = document.createElement("h3");
+        final_amt.innerText = "Order Total"
+
+        let amt = document.createElement("h4");
+        amt.innerHTML = `$${sum}`
+        let taxes_amt = document.createElement("h4");
+        taxes_amt.innerHTML = `$${tax}`
+        let ship_amt = document.createElement("h4");
+        ship_amt.innerHTML = `$${ship}`;
+        let final = document.createElement("h3");
+        final.innerHTML = `$ ${total}`
+
+
+        left_div.append(price,taxes,shipping,final_amt);
+        right_div.append(amt,taxes_amt,ship_amt,final);
+        document.getElementById("total_price").append(left_div,right_div)
+</script>
