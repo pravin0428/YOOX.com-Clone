@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MYOOX</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div>
+        <div id="navbar"></div>
+        <div id="login"></div>
+        <div id="top-container">
+            <div>
+                <h1>MYOOX</h1>
+                <div>REGISTRATION</div>
+            </div>
+            <div>
+                <div>Take advantage of a faster checkout and enjoy promotions for registered customers only</div>
+                <button id="benefits">Discover all the benefits</button>
+            </div>
+        </div>
+        <div id="image-container"></div>
+        <div id="bottom-container">
+            <div>
+                <span>REGISTER WITH YOUR SOCIAL MEDIA ACCOUNT</span>
+                <button id="facebook-button"></button>
+                <button id="google-button"></button>
+            </div>
+            <div>
+                <span>OR WITH YOUR EMAIL</span>
+                <form action="">
+                    <input type="text" placeholder="FIRST NAME*" id="firstName" required>
+                    <input type="text" placeholder="LAST NAME*" id="lastName" required>
+                    <input type="email" placeholder="E-MAIL*" id="email" required>
+                    <input type="password" placeholder="Password*" id="password" required>
+                    <div>
+                        <span>
+                            Personalize your shopping experience.
+                        </span>
+                        <div id="gender-box">
+                            <label class="container">Female
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="container">Male
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <span>
+                        If you are over 18 years old, celebrate your birthday with us: We have a surprise for you.
+                    </span>
+                    <input type="date" placeholder="DATE OF BIRTH" id="dob" required>
+                    <div id="terms-conditions">
+                        <span>I declare that I have read and accept the </span>
+                        <a href="https://www.yoox.com/legal/UseTermsMyoox">MYOOX Terms and Conditions of Use</a>
+                    </div>
+                    <div>
+                        <input type="checkbox" required value="true" id="terms">
+                        <span>I agree to the use of my personal data in order to be updated on new arrivals, informed about exclusive items and contacted as part of targeted marketing initiatives related to services offered by YOOX.</span>
+                    </div>
+                    <input type="submit" id="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="register.js" type="module"></script>
