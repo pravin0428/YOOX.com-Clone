@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kids page</title>
+    <link rel="stylesheet" href="navbar.css">
     <style>
         *{
             background-color:  #f3f3f3;
@@ -83,6 +84,8 @@
     </style>
 </head>
 <body>
+    <div id="nav"></div>
+
     <div id="img_div">
         <img src="https://www.yoox.com/images/yoox80/banners/6821_1_BeachDays_Main_K.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510" alt="">
     </div>
@@ -118,10 +121,11 @@
         <a href="" class="a_tag">Shop Girls</a>
         <a href="" class="a_tag">Shop Boys</a>
     </div>
+    <div id="fot"></div>
 </body>
 </html>
 
-<script>
+<script type="module">
         let nag = document.getElementById("new_arrival_girls");
         
         let nag_data = [
@@ -354,6 +358,10 @@ description.innerText = ele.description
 div.append(image,title,description);
 document.getElementById("display").append(div)
 })
+
+import{navbar,footer} from "./navbar.js"
+    document.getElementById("nav").innerHTML=navbar();
+    document.getElementById("fot").innerHTML=footer();
  
 
 //===-----========relative div

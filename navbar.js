@@ -17,9 +17,9 @@ function navbar() {
     </div>
         <div class="cl2">
             <div>
-                <a href="yoox.html">WOMAN</a>
+                <a href="index.html">WOMAN</a>
                 <a href="man.html">MAN</a>
-                <a href="kid.html">KIDS</a>
+                <a href="kids.html">KIDS</a>
                 <P>/</P>
                 <a href="">DISINE+ART</a>
             </div>
