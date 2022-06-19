@@ -2,9 +2,9 @@ function navbar() {
     return `
     <div class="cl1">
             <select name="" id="">
-                <option value="">united satet</option>
-                <option value="">armenia</option>
-                <option value="">georgia</option>
+                <option value="">United States</option>
+                <option value="">Armenia</option>
+                <option value="">Georgia</option>
             </select>
             <a href="">CUSTOMER CARE</a>
             <p>FREE STANDARD SHIPPING ON ORDERS OVER $200</p>
@@ -21,7 +21,7 @@ function navbar() {
                 <a href="man.html">MAN</a>
                 <a href="kids.html">KIDS</a>
                 <P>/</P>
-                <a href="">DISINE+ART</a>
+                <a href="art.html">DISINE+ART</a>
             </div>
 
             <h1>
