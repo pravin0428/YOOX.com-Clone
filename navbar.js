@@ -2,26 +2,26 @@ function navbar() {
     return `
     <div class="cl1">
             <select name="" id="">
-                <option value="">united satet</option>
-                <option value="">armenia</option>
-                <option value="">georgia</option>
+                <option value="">United States</option>
+                <option value="">Armenia</option>
+                <option value="">Georgia</option>
             </select>
             <a href="">CUSTOMER CARE</a>
             <p>FREE STANDARD SHIPPING ON ORDERS OVER $200</p>
             <div>
-                <ion-icon name="pencil-outline"></ion-icon> <a href="">REGISTER</a>
+                <ion-icon name="pencil-outline"></ion-icon> <a href="./register.html">REGISTER</a>
             </div>
             <div>
-                <ion-icon name="lock-open"></ion-icon><a href="login.html">LOGIN</a>
+                <button id="button">LOGIN</button>
             </div>
     </div>
         <div class="cl2">
             <div>
-                <a href="yoox.html">WOMAN</a>
+                <a href="index.html">WOMAN</a>
                 <a href="man.html">MAN</a>
-                <a href="kid.html">KIDS</a>
+                <a href="kids.html">KIDS</a>
                 <P>/</P>
-                <a href="">DISINE+ART</a>
+                <a href="art.html">DISINE+ART</a>
             </div>
 
             <h1>

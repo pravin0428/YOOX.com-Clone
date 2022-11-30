@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids page</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        *{
+            background-color:  #f3f3f3;
+        }
+        #img_div{
+            
+            width: 100%;height:680px;
+        }
+        #img_div img{
+            width:100%;
+            position: absolute;
+            display: block;
+            
+        }
+        .relative_div{
+            padding: 10px 0px 0px 20px;
+            width: 300px;height: 180px;
+            background-color:white;
+            position: relative;   
+            top: -300px;
+            left: 20px;
+            
+        }
+        .a_tag{
+            color: black;
+            margin-right: 50px;
+            font-size:larger ;
+        }
+        #girls{
+            text-align: center;
+        }
+        #new_arrival_girls{
+            
+            display: GRID;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 2%;
+            justify-items: center;
+            
+        }
+        #new_arrival_girls div{
+            cursor: pointer;
+            
+            width: 79%;
+            box-shadow: 0px 0px 5px 0px ;
+
+        }
+        #boys{
+            text-align: center;
+            margin-top: 200px;
+        }
+        #new_arrival_boys{
+            
+            display: GRID;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1%;
+            justify-items: center;
+            
+        }
+        #new_arrival_boys div{
+            cursor: pointer;
+            border: 0px;
+            width: 79%;height: 95%;
+            box-shadow: 0px 0px 5px 0px ;
+            padding: 2%;
+        }
+        #display{
+            
+            display: flex;
+            margin-top: 100px;
+        }
+        #display div{
+            margin: auto;
+            text-align: center;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="nav"></div>
+
+    <div id="img_div">
+        <img src="https://www.yoox.com/images/yoox80/banners/6821_1_BeachDays_Main_K.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510" alt="">
+    </div>
+    <div class="relative_div">
+        <h1>FUN IN THE SUN</h1>
+        <p>Bright tones and tropical prints</p>
+        <a href="" class="a_tag">Shop Girls</a>
+        <a href="" class="a_tag">Shop Boys</a>
+    </div>
+    
+    <div id="girls">
+        <h2>NEW ARRIVALS GIRLS</h2>
+        <a href="">VIEW ALL</a>
+        <div id="new_arrival_girls">
+        </div>
+    </div>
+    
+    <div id="boys">
+        <h2>NEW ARRIVALS BOYS</h2>
+        <a href="">VIEW ALL</a>
+        <div id="new_arrival_boys">
+        </div>
+    </div>
+
+    <div id="display"></div>
+
+    <div id="img_div">
+        <img src="https://www.yoox.com/images/yoox80/banners/6821_1_SummerCamp_Main_K.jpg?634485886869569819#width=1380&height=637" alt="">
+    </div>
+    <div class="relative_div">
+        <h1>SUMMER ADVENTURE</h1>
+        <p>For camp, vacation and beyond</p>
+        <a href="" class="a_tag">Shop Girls</a>
+        <a href="" class="a_tag">Shop Boys</a>
+    </div>
+    <div id="fot"></div>
+</body>
+</html>
+
+<script type="module">
+        let nag = document.getElementById("new_arrival_girls");
+        
+        let nag_data = [
+            {
+                image:"https://www.yoox.com/images/items/12/12772190KA_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"OFF - WHITE KIDS",
+                price:"<del>$228.00 </del> 42% OFF<br> $ 132.00",
+                p:132
+            },
+            {
+                image:"https://www.yoox.com/images/items/47/47307190BU_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"BANANA MOON",
+                price:"<del>$79.00 </del> 41% OFF<br> $ 46.00",
+                p:46
+            },
+            {
+                image:"https://www.yoox.com/images/items/17/17276201JP_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"Sandals",
+                price:"<del>$537.00 </del> 45% OFF<br> $ 295.00",
+                p:295
+            },
+
+            {
+                image:"https://www.yoox.com/images/items/15/15215382CQ_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"STELLA McCARTNEY KIDS",
+                price:"<del>$152.00 </del> 36% OFF<br> $ 96.00",
+                p:96
+            },
+            {
+                image:"https://www.yoox.com/images/items/46/46839854QK_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"IL GUFO",
+                price:"<del>$79.00 </del> 41% OFF<br> $ 46.00",
+                p:46
+            },
+            {
+                image:"https://www.yoox.com/images/items/47/47307181QT_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"BANANA MOON",
+                price:"<del>$69.00 </del> 43% OFF<br> $ 39.00",
+                p:39
+            },
+            {
+                image:"https://www.yoox.com/images/items/12/12804747GR_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"CHIARA FERRAGNI",
+                price:"<del>$125.00 </del> 56% OFF<br> $ 55.00",
+                p:55
+            },
+            {
+                image:"https://www.yoox.com/images/items/42/42832992PL_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"STELLA McCARTNEY KIDS",
+                price:"<del>$120.00 </del> 34% OFF<br> $ 79.00",
+                p:79
+            },
+            {
+                image:"https://www.yoox.com/images/items/17/17283475SB_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"NEW BALANCE",
+                price:"<del>$69.00 </del> 43% OFF<br> $ 39.00",
+                p:39
+            }
+        ]
+        append_girls_data(nag_data)
+    
+    
+ 
+function append_girls_data(data){    
+    data.forEach(function(ele){
+    let div = document.createElement("div");
+
+    let img = document.createElement("img");
+     img.src = ele.image;
+
+     let title = document.createElement("h3");
+     title.innerText = ele.title;
+     
+     let price = document.createElement("h5");
+     price.innerHTML = ele.price;
+
+
+     div.append(img,title,price)
+     document.getElementById("new_arrival_girls").append(div)
+     
+    //localstorage
+    div.addEventListener("click",new_page)
+    function new_page() {
+        var arr = [];
+        console.log("hello")
+        var data = {
+            image:ele.image,
+            title:ele.title,
+            price:ele.price,
+            mp:ele.p
+        }
+        arr.push(data);
+        localStorage.setItem("girls_data",JSON.stringify(data))
+        window.location.href = "kid final page.html"
+    }
+    })  
+     
+ }
+
+//  ======--------////////
+
+let nab = document.getElementById("new_arrival_boys");
+        
+        let nab_data = [
+            {
+                image:"https://www.yoox.com/images/items/12/12826937KT_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"MARCELO BURLON",
+                price:"<del>$189.00 </del> 44% OFF<br> $ 104.00",
+                p:104
+            },
+            {
+                image:"https://www.yoox.com/images/items/49/49767439XT_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"NIKE",
+                price:"<del>$79.00 </del> 41% OFF<br> $ 46.00",
+                p:46
+            },
+            {
+                image:"https://www.yoox.com/images/items/17/17283325HR_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"SNEAKER",
+                price:"<del>$53.00 </del> 45% OFF<br> $ 29.00",
+                p:29
+            },
+
+            {
+                image:"https://www.yoox.com/images/items/12/12478160KD_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"RALPH LAUREN",
+                price:"<del>$104.00 </del> 36% OFF<br> $ 64.00",
+                p:64
+            },
+            {
+                image:"https://www.yoox.com/images/items/12/12826931FA_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"MARCELO BURLON",
+                price:"<del>$143.00 </del> 44% OFF<br> $ 79.00",
+                p:79
+            },
+            {
+                image:"https://www.yoox.com/images/items/13/13788952EN_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"VERSACE YOUNG",
+                price:"<del>$232.00 </del> 43% OFF<br> $ 134.00",
+                p:134
+            },
+            {
+                image:"https://www.yoox.com/images/items/17/17257460QM_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"GOLDEN GOOSE DELUXE BRAND ",
+                price:"<del>$125.00 </del> 56% OFF<br> $ 55.00",
+                p:55
+            },
+            {
+                image:"https://www.yoox.com/images/items/16/16127583JV_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"COLMAR",
+                price:"<del>$410.00 </del> 53% OFF<br> $ 189.00",
+                p:189
+            },
+            {
+                image:"https://www.yoox.com/images/items/13/13801793JK_14_f.jpg?impolicy=crop&width=306&height=390",
+                title:"LOTTO",
+                price:"<del>$86.00 </del> 39% OFF<br> $ 52.00",
+                p:52
+            }
+        ]
+        append_boys_data(nab_data)
+    
+    
+ 
+function append_boys_data(data){    
+    data.forEach(function(ele){
+    let div = document.createElement("div");
+
+    let img = document.createElement("img");
+     img.src = ele.image;
+
+     let title = document.createElement("h3");
+     title.innerText = ele.title;
+     
+     let price = document.createElement("h5");
+     price.innerHTML = ele.price;
+
+
+     div.append(img,title,price)
+     document.getElementById("new_arrival_boys").append(div)
+     
+    //localstorage
+    div.addEventListener("click",new_page_nab)
+    function new_page_nab() {
+        console.log("hello")
+        var data = {
+            image:ele.image,
+            title:ele.title,
+            price:ele.price,
+            mp:ele.p
+            
+        }
+        localStorage.setItem("girls_data",JSON.stringify(data))
+        window.location.href = "kid final page.html"
+    }
+    })  
+ }
+
+//---------========////////div display
+let display_div_data =[ 
+{
+    image:"https://www.yoox.com/images/yoox80/banners/6821_3_Billieblush_Tris_K.jpg?634485886869569819#width=387&height=540",
+    title:"BILLIEBLUSH",
+    description:"Wild and free: discover the new collection "
+},
+{
+    image:"https://www.yoox.com/images/yoox80/banners/6821_1_GiocoeCasa_tris_K.jpg?634485886869569819#width=430&height=600",
+    title:"A WORLD OF FUN",
+    description:"toys and more "
+},
+{
+    image:"https://www.yoox.com/images/yoox80/banners/6821_5_Kenzo_Tris_K.jpg?634485886869569819#width=387&height=540",
+    title:"KENZO",
+    description:"iconic style and good vibe for SS22 "
+}
+]
+
+display_div_data.forEach(function(ele){
+let div = document.createElement("div");
+
+let image = document.createElement("img");
+image.src = ele.image;
+
+let title = document.createElement("h3");
+title.innerText = ele.title;
+
+let description = document.createElement("p");
+description.innerText = ele.description
+
+div.append(image,title,description);
+document.getElementById("display").append(div)
+})
+
+import{navbar,footer} from "./navbar.js"
+    document.getElementById("nav").innerHTML=navbar();
+    document.getElementById("fot").innerHTML=footer();
+ 
+
+//===-----========relative div
+
+
+ 
+</script>

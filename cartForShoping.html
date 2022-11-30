@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../all_css/cartShoing.css">
+    <link rel="stylesheet" href="cartShoing.css">
  
     <title>Document</title>
     
@@ -58,8 +58,16 @@ ct.innerText = `Total Item In Cart : ${count}`
     deleteCart(index)
     })
 
+    let btn1 = document.createElement("button") 
+         btn1.id = "shop"
+         btn1.innerText = "Shop Now"
+         btn1.addEventListener("click" , function(){
+           shoping(elem)
+         })
+
+
     div1.append(image)
-    div2.append(head,para1,para2 , btn)
+    div2.append(head,para1,para2 , btn ,btn1)
     div.append(div1,div2)
     ctnr.append(div)
     })  
@@ -76,5 +84,10 @@ ct.innerText = `Total Item In Cart : ${count}`
     cartShow(cart)
 
 }
+
+function shoping(){
+window.location.href = "payments.html"
+}
  </script>
 
+ 

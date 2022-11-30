@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kids end page</title>
+    <style>
+        
+        #container{
+            display: flex;
+            justify-content: center;
+             
+        }
+        .add_to_shopping_bag{
+            display: block;
+            margin-top: 70%;
+            padding: 5%;
+            width: 180%;
+            color: #f3f3f3;
+            background-color: #333333;
+            cursor: pointer;border: 0px;
+        }
+        .add_to_shopping_bag:hover{
+            color:#6b6969
+        }
+        .add_to_shopping_bag:active{
+            background-color: #1a1a1a;
+        }
+        .add_to_dream_box{
+            padding: 5%;border: 0px;
+            width: 180%;
+            color: #333333;
+            background-color: #f3f3f3;
+            cursor: pointer;
+        }
+        .add_to_dream_box:hover{
+            color: #b9b8b8;
+        }
+        .add_to_dream_box:active{
+            background-color:#d9d6d6;
+        }
+        #bottom_part{
+            width: 60%;
+            display: flex;
+            margin: auto;
+        }
+        .left_div{
+            width:100%
+        }
+        hr{
+            width: 60%;
+        }
+        .right_div p{
+            
+            line-height: 22px;
+        }
+        h4{
+            margin-bottom: -15px;
+        }
+        h5{
+            margin-bottom: -20px;
+        }
+        /* p{
+            margin-bottom: -10px;
+        } */
+        #navbar{
+            width: 60%;height: 50px;
+            margin: auto;
+            background-color: #333333;
+            justify-content:space-around;
+            align-items: center;
+            display: flex;
+         
+        }
+        #navbar a{
+            font: 18px bold  ;
+            color: aliceblue;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html">Go Back</a>
+        <a href="shopping_bag.html">See Your Shopping Bag</a>
+    </div>
+    <div id="container">
+        <div id="main_img"></div>
+        <div id="data"></div>
+    </div>
+    <hr>
+    <div id="bottom_part">
+        
+        <div class="left_div">
+            <h4>COMPOSITION</h4>
+            <br>
+            <p>100% viscose</p>
+        </div>
+        
+        <div class="right_div">
+            <h4>DETAILS</h4>
+            <br>
+            <p>plain weave, no appliqués, multicolor pattern, round collar, long sleeves, unlined, 1 button, multipockets, wash at 30° c, do not dry clean, do not bleach, do not tumble dry, iron at 150° c max <br>Product code: 15215382CQ</p>
+        </div>
+    </div>
+    <hr>
+    <div id="bottom_part">
+        
+        <div class="left_div">
+            <h4>SHIPPING</h4><br>
+            <h5>Standard $ 9.95</h5><br>
+            <p>12-15 business days</p>
+            <br>
+            <h5>Express $ 19.95</h5><br>
+            <p>2-4 business days</p>
+        </div>
+        
+        <div class="right_div">
+            <h4>RETURNS / EXCHANGES</h4>
+            <br>
+            <p>Fast and easy returns</p><br>
+            <h5>Returns</h5><br>
+            <p>within 60 days</p><br>
+            <h5>Exchanges</h5><br>
+            <p>within 60 days</p>
+
+        </div>
+    </div>
+</body>
+</html>
+<script>
+      var arr = JSON.parse(localStorage.getItem("girls_data"));
+      
+      //var arr2 = JSON.parse(localStorage.getItem("boys_data"));
+    
+    
+
+    let div_img = document.createElement("div");
+    let div_data = document.createElement("div");
+
+    let img = document.createElement("img");
+     img.src = arr.image;
+
+     let title = document.createElement("h3");
+     title.innerText = arr.title;
+     
+     let price = document.createElement("h5");
+     price.innerHTML = arr.price;
+
+     let shopping_bag = document.createElement("button");
+     shopping_bag.innerHTML = "ADD TO SHOPPING BAG"
+     shopping_bag.setAttribute("class","add_to_shopping_bag")
+     shopping_bag.addEventListener("click",add_to_bag)
+
+     let dream_box = document.createElement("button");
+     dream_box.innerHTML = "ADD TO DREAM BOX"
+     dream_box.setAttribute("class","add_to_dream_box")
+     
+
+     div_img.append(img)
+     div_data.append(title,price,shopping_bag,dream_box)
+
+     document.getElementById("container").append(div_img,div_data)
+    
+    //this is main function which will take all items put on bag to add to cart page 
+    function add_to_bag() {
+        setTimeout(function(){
+            alert("Item added to bag Successfully")
+        },100)
+        let array = JSON.parse(localStorage.getItem("add_to_bag")) || [];
+        let data = [
+            {image:arr.image},
+            {title:arr.title},
+            {price:arr.price},
+            {mp    :arr.mp}
+        ]
+        array.push(data);
+        localStorage.setItem("add_to_bag",JSON.stringify(array))
+        console.log(array)
+    }
+
+   
+
+</script>
