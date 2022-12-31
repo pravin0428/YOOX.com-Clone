@@ -1,8 +1,8 @@
-body>div{
+/* body>div{
     width: 100%;
     background-color: antiquewhite;
-   
-}
+    border: 10px solid slategrey;
+} */
 
 .head{
     font-size: 24px;
@@ -93,7 +93,7 @@ h1{
     align-items: flex-end;
     width: 100%;
     height: 600px;
-    
+    border: 4px solid black;
     background-image: url('https://www.yoox.com/images/yoox80/banners/6824_1_Wedding_Main_W.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510');
     background-repeat: no-repeat;
     background-size: cover;
@@ -395,4 +395,103 @@ a{
 }
 .last3>a{
     color: lightseagreen;
+}
+
+@media only screen and (max-width: 320px){
+   
+    #nav{
+        display: none;
+        border: 2px solid red;
+        width: 100%;
+    }
+
+    .bcpic{
+        display: flex;
+        align-items: flex-end;
+        width: 155%;
+        height: 600px;
+        /* border: 4px solid rgb(12, 15, 227); */
+        background-image: url('https://www.yoox.com/images/yoox80/banners/6824_1_Wedding_Main_W.jpg?634485886869569819&impolicy=cropDefault&width=960&height=510');
+        background-repeat: no-repeat;
+        background-size:  100% 100%;
+    }
+  
+  
+   
+    .pic{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin: auto;
+    }
+
+    .in-pic2{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin: auto; 
+    }
+    .in-pic2>div{
+        margin: auto;
+        width: 140%;
+        /* border: 4px solid rgb(209, 12, 227);   */
+    }
+    .in-pic2type{
+        text-align: center;
+        width: 140%;
+        margin: auto;
+    }
+    .pic3{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin: auto;   
+    }
+    .pic3>div{
+        margin: auto;
+        width: 140%;
+        /* border: 4px solid rgb(209, 12, 227);    */
+    }
+
+    .in-pic4{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin: auto;   
+    }
+    .in-pic4>div{
+        margin: auto;
+        width: 140%;
+        /* border: 4px solid rgb(12, 216, 227);      */
+    }
+
+    .pic5{
+        margin: auto;
+        width: 140%;
+        /* border: 4px solid rgb(209, 12, 227)  */
+    }
+
+    .in-pic6{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin: auto;   
+    }
+    .in-pic6>div{
+        margin: auto;
+        width: 140%;
+        border: 4px solid rgb(209, 12, 227);     
+    }
+
+    .pic7{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        width: 100%;
+        margin: auto;    
+    }
+    .pic7>div{
+        margin: auto;
+        width: 140%;
+        border: 4px solid rgb(209, 12, 227);      
+    }
 }

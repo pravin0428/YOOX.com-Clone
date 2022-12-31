@@ -16,7 +16,7 @@ function navbar() {
             </div>
     </div>
         <div class="cl2">
-            <div>
+            <div class="pageNav" >
                 <a href="index.html">WOMAN</a>
                 <a href="man.html">MAN</a>
                 <a href="kids.html">KIDS</a>
