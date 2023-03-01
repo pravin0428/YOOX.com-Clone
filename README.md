@@ -24,6 +24,8 @@ https://admirable-halva-9f908e.netlify.app/
 <h1>Tech Stack</h1>
 <br>
 
+<img src="./YOOX.png" >
+
 HTML | CSS | JavaScript | Git | Bootstrap | JSON Server
 
 <h1>Team</h1>
